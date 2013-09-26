@@ -189,6 +189,17 @@ body.left-nav .topcoat-navigation-bar, body.left-nav .content {
     padding: 0px;
 }
 
+.icon-settings {
+    background: url("../topcoat/img/settings.svg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    margin: 0px 8px 0px 0px;
+    padding: 0px;
+}
+
 .centerize {
     display: block;
     margin: 0 auto;

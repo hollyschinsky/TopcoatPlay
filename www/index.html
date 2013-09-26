@@ -26,13 +26,7 @@
 
         <link rel="stylesheet" type="text/css" href="topcoat/css/topcoat-spinner.css" />
         <link rel="stylesheet" type="text/css" href="topcoat/css/topcoat-progressbar.css" />
-        <link rel="stylesheet" type="text/css" href="topcoat/css/topcoat-notification.css" />
         <link rel="stylesheet" type="text/css" href="topcoat/css/topcoat-overlay.css" />
-        <link rel="stylesheet" type="text/css" href="topcoat/css/topcoat-progressbar.css" />
-        <link rel="stylesheet" type="text/css" href="topcoat/css/topcoat-range-input.css" />
-        <link rel="stylesheet" type="text/css" href="topcoat/css/topcoat-tab-bar.css" />
-        <link rel="stylesheet" type="text/css" href="topcoat/css/topcoat-button-bar.css" />
-        <link rel="stylesheet" type="text/css" href="topcoat/css/topcoat-icon.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
     </head>
 
@@ -159,22 +153,32 @@
         <br>
 
         <div id="controls-tpl" class="off">
+            <h2>Switch</h2>
+            <label class="topcoat-switch">
+                <input type="checkbox" class="topcoat-switch__input">
+                <div class="topcoat-switch__toggle"></div>
+            </label>
+
             <h2>Radio Button</h2>
-            <label class="topcoat-radio-button__label">
+            <label class="topcoat-radio-button">
                 <input type="radio" name="topcoat">
-                <div class="topcoat-radio-button"></div>
+                <div class="topcoat-radio-button__checkmark"></div>
                 Turn on
             </label>
+
+
+            <h2>Range</h2>
+            <input type="range" class="topcoat-range">
             <br>
-            <br>
-            <section>
-                <h2>Range Input</h2>
-                <input type='range' class='topcoat-range-input'>
-            </section>
-            <br>
-            <br>
+
             <h2>Notification</h2>
             <span class="topcoat-notification">5</span>
+
+            <h2>Text Input States</h2>
+
+            <input type="text" class="topcoat-text-input" placeholder="Normal text" value="">
+            <input type="text" class="topcoat-text-input" placeholder="Disabled text" value="" disabled>
+            <input type="text" class="topcoat-text-input" value="Error" pattern="text">
         </div>
 
         <div id="content" class="content">

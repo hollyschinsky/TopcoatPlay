@@ -22,10 +22,7 @@ var app = {
         this.bindEvents();
     },
     // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
+     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     onLoad: function() {
@@ -74,34 +71,9 @@ var app = {
         }
         else {
             content.innerHTML = $("#"+template).html();
-
-//        if (template=='overlay-tpl') {
-//            var progress_bar = document.getElementById('progress_bar')
-//
-//            setInterval(function(){
-//                var attr= progress_bar.getAttribute('style');
-//                var width = parseInt(attr.substring(attr.length-3,attr.length-1))+10;
-//                if (width!="100") progress_bar.setAttribute('style', 'width:'+width+'%');
-//                //else cl.add('off');
-//            },600);
-//        }
-
             if (template!='button-bar-tpl') document.getElementById('tab1').classList.remove('is-active');
         }
     },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        var slideMenuButton = document.getElementById('slide-menu-button');
-        slideMenuButton.onclick = function (e) {
-            var cl = document.body.classList;
-            if (cl.contains('left-nav')) {
-                cl.remove('left-nav');
-            } else {
-                cl.add('left-nav');
-            }
-        };
     }
 };
